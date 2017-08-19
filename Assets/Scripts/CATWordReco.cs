@@ -6,6 +6,7 @@ public class CATWordReco : MonoBehaviour {
 
 	public static AudioSource audio;
 	public static int status = 0;
+	public static string soundText;
 
 	// Use this for initialization
 	public static string EchoWord() {
@@ -14,8 +15,15 @@ public class CATWordReco : MonoBehaviour {
 
 		//StartCoroutine (TextToSpeech.DownloadTheAudio(status.ToString(), audio));
 		//if (status==2) {
-			
-			string soundText = "The Word CAB is detected - You are right";
+		if (AReco.AWord_X > BReco.BWord_X)
+		{
+			soundText = "Adam is greater than Ben";
+		}
+		else if(AReco.AWord_X<BReco.BWord_X)
+		{
+			soundText = "Ben is greater than Adam";
+		}
+		//	string soundText = "The Word CAB is detected - You are right";
 
 		
 

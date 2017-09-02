@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainMenu.unity
     guid: f0855e67a9326b542980440500aa5109
   - enabled: 1
@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 1a4abd82b440b1a46b9344bf171726fb
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/CATWordReco.unity
     guid: ad20b6bac07809046bc10328aee05835
+  - enabled: 0
+    path: Assets/Scenes/DOGWordReco.unity
+    guid: d2e4b27f1942580409f0e1dd58f0ed8a

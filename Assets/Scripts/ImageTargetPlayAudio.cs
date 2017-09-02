@@ -8,7 +8,6 @@ public class ImageTargetPlayAudio : MonoBehaviour,ITrackableEventHandler
 {
 	private TrackableBehaviour mTrackableBehaviour;
 
-	public AudioSource audio;
 	public static bool CardDetected = false;
 	public GameObject StartCardObject;
 	//public GameObject MainMenuPanel;
@@ -29,7 +28,7 @@ public class ImageTargetPlayAudio : MonoBehaviour,ITrackableEventHandler
 		TrackableBehaviour.Status previousStatus,
 		TrackableBehaviour.Status newStatus)
 	{
-		audio = gameObject.GetComponent<AudioSource> ();
+		AudioSource audio = gameObject.GetComponent<AudioSource> ();
 
 		if (newStatus == TrackableBehaviour.Status.DETECTED ||
 			newStatus == TrackableBehaviour.Status.TRACKED ||
